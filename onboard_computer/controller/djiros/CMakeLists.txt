@@ -137,7 +137,7 @@ include_directories(
 # ) 
 
 ## Declare a cpp executable
-add_executable(djiros_node 
+add_executable(djiros_node
   src/djiros/djiros_node.cpp
   ${DJIROS_SOURCES}
   ${DJI_OSDK_ROS_SOURCES}
@@ -145,7 +145,7 @@ add_executable(djiros_node
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-add_dependencies(djiros_node 
+add_dependencies(djiros_node
   djiros_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
