@@ -21,6 +21,7 @@
 #include <quadrotor_msgs/OptimalTimeAllocator.h>
 #include <quadrotor_msgs/SpatialTemporalTrajectory.h>
 #include <quadrotor_msgs/ReplanCheck.h>
+#include <decomp_ros_msgs/cmd.h>
 
 #include <global_planner/utils/a_star.h>
 #include <global_planner/utils/backward.hpp>

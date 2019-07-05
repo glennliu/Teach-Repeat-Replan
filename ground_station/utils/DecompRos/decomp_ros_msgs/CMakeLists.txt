@@ -4,6 +4,7 @@ project(decomp_ros_msgs)
 find_package(catkin REQUIRED COMPONENTS
   #armadillo
   roscpp
+  std_msgs
   geometry_msgs
   message_generation
 )
@@ -23,8 +24,11 @@ add_message_files(
   PolyhedronArray.msg
 )
 
+add_service_files(DIRECTORY srv FILES cmd.srv)
+
 generate_messages(
     DEPENDENCIES
+    std_msgs
     geometry_msgs
 )
 
